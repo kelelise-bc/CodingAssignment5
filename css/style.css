@@ -1,0 +1,150 @@
+/* =======Box Model Setup ======== */
+
+* {
+  box-sizing: border-box;
+}
+
+[class*="col"] {
+  float: left;
+  padding: 12px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../images/pexels-ekaterina-bolovtsova-6607374.jpg") center/cover
+      no-repeat fixed;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #664c36;
+  letter-spacing: -0.3px;
+  line-height: 1.4;
+  margin: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  margin: 0;
+  color: #331c08;
+  letter-spacing: -0.5px;
+  line-height: 2.5;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 0.85;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+
+.small-heading {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+p,
+figcaption {
+  font-size: small;
+}
+
+a {
+  color: #802e08;
+  text-decoration: underline;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  border-radius: 5%;
+}
+
+figcaption {
+  color: #5c4e4e;
+}
+
+li {
+  color: #614419;
+}
+
+ol {
+  color: #614419;
+}
+/*comment div borders out before posting to canvas
+div {
+  border: double cornflowerblue;
+}*/
+
+.menu li span {
+  display: inline-block;
+  background-color: #d3c2b2;
+  border: 1px solid #d3a77c;
+  border-radius: 15px;
+  padding: 4px 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-family: "Caveat", cursive;
+  font-size: 1.2em;
+  color: #8d5b06;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu li span:hover {
+  background-color: #ffe6cc;
+  transform: translateY(-2px);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+ol li::marker {
+  font-weight: bolder;
+}
+
+input {
+  color: rgb(90, 28, 28);
+  font-size: 1rem;
+  padding: 4px 6px;
+}
+
+fieldset {
+  color: #8d5b06;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+}
+
+legend {
+  font-family: "Caveat", cursive;
+  font-size: larger;
+  color: rgb(82, 23, 10);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  padding: 10px 40px;
+}
+
+.footer p {
+  text-align: right;
+  font-size: 0.7rem;
+  margin: 0;
+}
